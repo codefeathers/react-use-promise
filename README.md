@@ -10,7 +10,7 @@ npm i @codefeathers/use-promise
 
 ## Usage
 
-```JavaScript
+```JSX
 import { usePromise } from "@codefeathers/use-promise";
 
 const Search = () => {
