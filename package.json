@@ -1,0 +1,33 @@
+{
+	"name": "@codefeathers/use-promise",
+	"version": "0.1.0",
+	"description": "Fetch data with React Hooks",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/codefeathers/react-use-promise.git"
+	},
+	"keywords": [
+		"React",
+		"Hooks",
+		"use",
+		"fetch",
+		"data",
+		"promise"
+	],
+	"author": "Muthu Kumar <@MKRhere> (https://mkr.pw)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/codefeathers/react-use-promise/issues"
+	},
+	"homepage": "https://github.com/codefeathers/react-use-promise#readme",
+	"devDependencies": {
+		"react": "*"
+	},
+	"peerDependencies": {
+		"react": "*"
+	}
+}
