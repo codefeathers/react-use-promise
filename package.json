@@ -1,10 +1,14 @@
 {
 	"name": "@codefeathers/use-promise",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"description": "Fetch data with React Hooks",
 	"main": "index.js",
+	"files": [
+		"dist"
+	],
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "tsc --importHelpers",
+		"build:w": "tsc --importHelpers -w"
 	},
 	"repository": {
 		"type": "git",
@@ -25,9 +29,14 @@
 	},
 	"homepage": "https://github.com/codefeathers/react-use-promise#readme",
 	"devDependencies": {
-		"react": "*"
+		"react": "*",
+		"typescript": "^4.0.2"
 	},
 	"peerDependencies": {
 		"react": "*"
+	},
+	"dependencies": {
+		"@types/react": "^16.9.49",
+		"tslib": "^2.0.1"
 	}
 }

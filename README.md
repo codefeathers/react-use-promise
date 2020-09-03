@@ -18,15 +18,18 @@ const Search = () => {
 	const [ search, setSearch ] = useState("");
 
 	// if the Promise rejects, error is set, otherwise response is set
-	const [ response, error ] = usePromise(
+	const [ response, error, loading ] = usePromise(
 		// Function that returns a Promise
 		() => fetch(`/api/search?s=${search}`).then(x => x.json()),
+		// default state of response
+		[],
 		// List of dependencies to watch for
 		[ search ],
 	);
 
 	return <>
 		<input value={search} onChange={e => setSearch(e.target.value)} />
+		{loading ? <p>Loading...</p> : ""}
 		{error ? <p>There was an error</p> :
 			<ol>
 				{response.map(each =>
