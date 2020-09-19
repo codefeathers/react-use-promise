@@ -1,8 +1,8 @@
 {
 	"name": "@codefeathers/use-promise",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Fetch data with React Hooks",
-	"main": "index.js",
+	"main": "dist",
 	"files": [
 		"dist"
 	],
